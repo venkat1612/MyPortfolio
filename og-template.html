@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- ============================================================
+     Social share card template (1200x630).
+     Edit the text below, then regenerate public/og-image.png:
+
+       npx playwright screenshot --viewport-size=1200,630 \
+         og-template.html public/og-image.png
+
+     Any headless-Chrome screenshot tool works. Not part of the
+     app bundle — it never ships to visitors.
+     ============================================================ -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{width:1200px;height:630px;background:#0a0a0f}
+  body{width:1200px;height:630px;overflow:hidden;
+    font-family:Inter,'DejaVu Sans',sans-serif;
+    background:#0a0a0f;color:#f4f4f5;position:relative}
+
+  .grid{position:absolute;inset:0;
+    background-image:linear-gradient(to right,rgba(255,255,255,.045) 1px,transparent 1px),
+                     linear-gradient(to bottom,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 10%,#000 40%,transparent 100%)}
+  .glow1{position:absolute;top:-220px;left:-120px;width:760px;height:760px;border-radius:50%;
+    background:rgba(124,108,246,.30);filter:blur(120px)}
+  .glow2{position:absolute;bottom:-260px;right:-140px;width:640px;height:640px;border-radius:50%;
+    background:rgba(34,211,238,.20);filter:blur(120px)}
+
+  .wrap{position:relative;padding:52px 70px;height:100%;display:flex;flex-direction:column;justify-content:center;gap:30px}
+
+  .top{display:flex;align-items:center;gap:16px}
+  .mark{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+    background:linear-gradient(140deg,#7c6cf6,#22d3ee);
+    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:22px;color:#fff}
+  .dom{font-family:'JetBrains Mono',monospace;font-size:19px;color:#a1a1aa}
+  .dom b{color:#7c6cf6;font-weight:500}
+
+  .pill{margin-left:auto;display:inline-flex;align-items:center;gap:10px;
+    border:1px solid rgba(16,185,129,.35);background:rgba(16,185,129,.10);
+    padding:9px 18px;border-radius:99px;font-size:16px;font-weight:600;color:#34d399}
+  .dot{width:9px;height:9px;border-radius:50%;background:#34d399}
+
+  h1{font-size:64px;line-height:1.02;font-weight:800;letter-spacing:-2.5px}
+  .grad{background:linear-gradient(110deg,#8b7cf8,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .role{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:21px;color:#8b7cf8}
+  .role span{color:#71717a}
+  .hook{margin-top:16px;font-size:20px;line-height:1.45;color:#a1a1aa;max-width:860px}
+
+  .bot{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+  .chip{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);
+    padding:8px 14px;border-radius:10px;font-family:'JetBrains Mono',monospace;
+    font-size:15px;color:#d4d4d8}
+  .loc{font-size:16px;color:#71717a}
+</style></head>
+<body>
+  <div class="grid"></div><div class="glow1"></div><div class="glow2"></div>
+
+  <div class="wrap">
+    <div class="top">
+      <div class="mark">VK</div>
+      <div class="dom">venkata<b>.dev</b></div>
+      <div class="pill"><span class="dot"></span>Open to new roles</div>
+    </div>
+
+    <div>
+      <h1>Venkata Sai<br><span class="grad">Kandipati</span></h1>
+      <div class="role">Java Backend Developer <span>/ 7+ years in production</span></div>
+      <div class="hook">Payment and risk platforms that stay upright under load — manual, failure-prone financial workflows rebuilt as resilient, event-driven systems.</div>
+    </div>
+
+    <div><div class="loc" style="margin-bottom:14px">Johannesburg, South Africa · UTC+2 · Open to on-site, hybrid or fully remote</div>
+    <div class="bot">
+      <div class="chip">Java</div>
+      <div class="chip">Spring Boot</div>
+      <div class="chip">Microservices</div>
+      <div class="chip">AWS Serverless</div>
+      <div class="chip">PostgreSQL</div>
+      
+    </div></div>
+  </div>
+</body></html>
