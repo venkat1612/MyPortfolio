@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import Cursor from './components/Cursor'
+import Chatbot from './components/Chatbot'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
@@ -46,6 +47,8 @@ export default function App() {
       </main>
 
       <Footer />
+
+      <Chatbot />
     </ThemeProvider>
   )
 }
