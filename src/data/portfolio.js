@@ -291,7 +291,7 @@ export const terminalLines = [
  *    Get a free key at https://web3forms.com (takes ~30 seconds, no account).
  *    Paste it below and the form emails you directly — no backend needed.
  * -------------------------------------------------------------------------- */
-export const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE'
+export const WEB3FORMS_KEY = '496fd17c-d49c-43ec-ad99-ccaf9534aa7c'
 
 export const navLinks = [
   { id: 'work',     label: 'Work' },

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://venkata-portfolio.vercel.app/sitemap.xml
+Sitemap: https://my-portfolio-ten-rosy-35.vercel.app/sitemap.xml
